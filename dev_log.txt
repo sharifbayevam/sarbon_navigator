@@ -1,0 +1,329 @@
+$ vite dev
+[33mThe plugin "vite-tsconfig-paths" is detected. Vite now supports tsconfig paths resolution natively via the [1mresolve.tsconfigPaths[22m option. You can remove the plugin and set [1mresolve.tsconfigPaths: true[22m in your Vite config instead.[39m
+
+  [32m[1mVITE[22m v8.1.2[39m  [2mready in [0m[1m687[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[2m00:00:46[22m [36m[1m[vite][22m[39m [34m[2m(ssr)[22m[39m connected.
+Error: Cannot find module '@/integrations/supabase/auth-attacher' imported from 'C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/src/start.js'
+    at fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:33103:32)
+    ... 8 lines matching cause stack trace ...
+    at ModuleRunner.getModuleInformation (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1199:28) {
+  cause: Error: Cannot find module '@/integrations/supabase/auth-attacher' imported from 'C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/src/start.js'
+      at fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:33103:32)
+      at RunnableDevEnvironment.fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:34288:10)
+      at fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:34238:17)
+      at handleInvoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:25828:27)
+      at EventEmitter.listenerForInvokeHandler (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:25883:19)
+      at EventEmitter.emit (node:events:509:28)
+      at Object.send (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:11188:37)
+      at Object.invoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:606:31)
+      at Object.invoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:655:31)
+      at ModuleRunner.getModuleInformation (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1199:28) {
+    code: 'ERR_MODULE_NOT_FOUND',
+    runnerError: Error: RunnerError
+        at reviveInvokeError (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:547:64)
+        at Object.invoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:620:11)
+        at async ModuleRunner.getModuleInformation (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1199:7)
+        at async request (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1216:83)
+        at async eval (C:\Users\HOSIYAT\Desktop\global-skill-navigator-main\src\start.js:4:1)
+        at async ESModulesEvaluator.runInlinedModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1006:3)
+        at async ModuleRunner.directRequest (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1259:59)
+        at async ModuleRunner.cachedRequest (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1166:73)
+        at async Promise.all (index 1)
+        at async loadEntries (C:\Users\HOSIYAT\Desktop\global-skill-navigator-main\node_modules\.pnpm\@tanstack+start-server-core@1.169.15\node_modules\@tanstack\start-server-core\src\createStartHandler.ts:115:53)
+  },
+  status: 500,
+  statusText: undefined,
+  headers: undefined,
+  data: undefined,
+  body: undefined,
+  unhandled: true
+}
+Error: h3 swallowed SSR error: {"status":500,"unhandled":true,"message":"HTTPError"}
+    at normalizeCatastrophicSsrResponse (virtual:tanstack-start-server-entry:29:47)
+    at async Object.fetch (virtual:tanstack-start-server-entry:41:14)
+    at async file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/@tanstack+start-plugin-core_5983a010ec7832120472370a2d271e42/node_modules/@tanstack/start-plugin-core/dist/esm/vite/dev-server-plugin/plugin.js:79:36
+Error: Cannot find module '@/integrations/supabase/auth-attacher' imported from 'C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/src/start.js'
+    at fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:33103:32)
+    ... 8 lines matching cause stack trace ...
+    at ModuleRunner.getModuleInformation (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1199:28) {
+  cause: Error: Cannot find module '@/integrations/supabase/auth-attacher' imported from 'C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/src/start.js'
+      at fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:33103:32)
+      at RunnableDevEnvironment.fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:34288:10)
+      at fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:34238:17)
+      at handleInvoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:25828:27)
+      at EventEmitter.listenerForInvokeHandler (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:25883:19)
+      at EventEmitter.emit (node:events:509:28)
+      at Object.send (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:11188:37)
+      at Object.invoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:606:31)
+      at Object.invoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:655:31)
+      at ModuleRunner.getModuleInformation (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1199:28) {
+    code: 'ERR_MODULE_NOT_FOUND',
+    runnerError: Error: RunnerError
+        at reviveInvokeError (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:547:64)
+        at Object.invoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:620:11)
+        at async ModuleRunner.getModuleInformation (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1199:7)
+        at async request (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1216:83)
+        at async eval (C:\Users\HOSIYAT\Desktop\global-skill-navigator-main\src\start.js:4:1)
+        at async ESModulesEvaluator.runInlinedModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1006:3)
+        at async ModuleRunner.directRequest (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1259:59)
+        at async ModuleRunner.cachedRequest (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1166:73)
+        at async Promise.all (index 1)
+        at async loadEntries (C:\Users\HOSIYAT\Desktop\global-skill-navigator-main\node_modules\.pnpm\@tanstack+start-server-core@1.169.15\node_modules\@tanstack\start-server-core\src\createStartHandler.ts:115:53)
+  },
+  status: 500,
+  statusText: undefined,
+  headers: undefined,
+  data: undefined,
+  body: undefined,
+  unhandled: true
+}
+Error: h3 swallowed SSR error: {"status":500,"unhandled":true,"message":"HTTPError"}
+    at normalizeCatastrophicSsrResponse (virtual:tanstack-start-server-entry:29:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.fetch (virtual:tanstack-start-server-entry:41:14)
+    at async file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/@tanstack+start-plugin-core_5983a010ec7832120472370a2d271e42/node_modules/@tanstack/start-plugin-core/dist/esm/vite/dev-server-plugin/plugin.js:79:36
+Error: Cannot find module '@/integrations/supabase/auth-attacher' imported from 'C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/src/start.js'
+    at fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:33103:32)
+    ... 8 lines matching cause stack trace ...
+    at ModuleRunner.getModuleInformation (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1199:28) {
+  cause: Error: Cannot find module '@/integrations/supabase/auth-attacher' imported from 'C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/src/start.js'
+      at fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:33103:32)
+      at RunnableDevEnvironment.fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:34288:10)
+      at fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:34238:17)
+      at handleInvoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:25828:27)
+      at EventEmitter.listenerForInvokeHandler (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:25883:19)
+      at EventEmitter.emit (node:events:509:28)
+      at Object.send (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:11188:37)
+      at Object.invoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:606:31)
+      at Object.invoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:655:31)
+      at ModuleRunner.getModuleInformation (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1199:28) {
+    code: 'ERR_MODULE_NOT_FOUND',
+    runnerError: Error: RunnerError
+        at reviveInvokeError (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:547:64)
+        at Object.invoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:620:11)
+        at async ModuleRunner.getModuleInformation (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1199:7)
+        at async request (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1216:83)
+        at async eval (C:\Users\HOSIYAT\Desktop\global-skill-navigator-main\src\start.js:4:1)
+        at async ESModulesEvaluator.runInlinedModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1006:3)
+        at async ModuleRunner.directRequest (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1259:59)
+        at async ModuleRunner.cachedRequest (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1166:73)
+        at async Promise.all (index 1)
+        at async loadEntries (C:\Users\HOSIYAT\Desktop\global-skill-navigator-main\node_modules\.pnpm\@tanstack+start-server-core@1.169.15\node_modules\@tanstack\start-server-core\src\createStartHandler.ts:115:53)
+  },
+  status: 500,
+  statusText: undefined,
+  headers: undefined,
+  data: undefined,
+  body: undefined,
+  unhandled: true
+}
+Error: h3 swallowed SSR error: {"status":500,"unhandled":true,"message":"HTTPError"}
+    at normalizeCatastrophicSsrResponse (virtual:tanstack-start-server-entry:29:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.fetch (virtual:tanstack-start-server-entry:41:14)
+    at async file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/@tanstack+start-plugin-core_5983a010ec7832120472370a2d271e42/node_modules/@tanstack/start-plugin-core/dist/esm/vite/dev-server-plugin/plugin.js:79:36
+Error: Cannot find module '@/integrations/supabase/auth-attacher' imported from 'C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/src/start.js'
+    at fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:33103:32)
+    ... 8 lines matching cause stack trace ...
+    at ModuleRunner.getModuleInformation (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1199:28) {
+  cause: Error: Cannot find module '@/integrations/supabase/auth-attacher' imported from 'C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/src/start.js'
+      at fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:33103:32)
+      at RunnableDevEnvironment.fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:34288:10)
+      at fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:34238:17)
+      at handleInvoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:25828:27)
+      at EventEmitter.listenerForInvokeHandler (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:25883:19)
+      at EventEmitter.emit (node:events:509:28)
+      at Object.send (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:11188:37)
+      at Object.invoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:606:31)
+      at Object.invoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:655:31)
+      at ModuleRunner.getModuleInformation (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1199:28) {
+    code: 'ERR_MODULE_NOT_FOUND',
+    runnerError: Error: RunnerError
+        at reviveInvokeError (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:547:64)
+        at Object.invoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:620:11)
+        at async ModuleRunner.getModuleInformation (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1199:7)
+        at async request (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1216:83)
+        at async eval (C:\Users\HOSIYAT\Desktop\global-skill-navigator-main\src\start.js:4:1)
+        at async ESModulesEvaluator.runInlinedModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1006:3)
+        at async ModuleRunner.directRequest (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1259:59)
+        at async ModuleRunner.cachedRequest (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1166:73)
+        at async Promise.all (index 1)
+        at async loadEntries (C:\Users\HOSIYAT\Desktop\global-skill-navigator-main\node_modules\.pnpm\@tanstack+start-server-core@1.169.15\node_modules\@tanstack\start-server-core\src\createStartHandler.ts:115:53)
+  },
+  status: 500,
+  statusText: undefined,
+  headers: undefined,
+  data: undefined,
+  body: undefined,
+  unhandled: true
+}
+Error: h3 swallowed SSR error: {"status":500,"unhandled":true,"message":"HTTPError"}
+    at normalizeCatastrophicSsrResponse (virtual:tanstack-start-server-entry:29:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.fetch (virtual:tanstack-start-server-entry:41:14)
+    at async file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/@tanstack+start-plugin-core_5983a010ec7832120472370a2d271e42/node_modules/@tanstack/start-plugin-core/dist/esm/vite/dev-server-plugin/plugin.js:79:36
+Error: Cannot find module '@/integrations/supabase/auth-attacher' imported from 'C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/src/start.js'
+    at fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:33103:32)
+    ... 8 lines matching cause stack trace ...
+    at ModuleRunner.getModuleInformation (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1199:28) {
+  cause: Error: Cannot find module '@/integrations/supabase/auth-attacher' imported from 'C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/src/start.js'
+      at fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:33103:32)
+      at RunnableDevEnvironment.fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:34288:10)
+      at fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:34238:17)
+      at handleInvoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:25828:27)
+      at EventEmitter.listenerForInvokeHandler (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:25883:19)
+      at EventEmitter.emit (node:events:509:28)
+      at Object.send (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:11188:37)
+      at Object.invoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:606:31)
+      at Object.invoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:655:31)
+      at ModuleRunner.getModuleInformation (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1199:28) {
+    code: 'ERR_MODULE_NOT_FOUND',
+    runnerError: Error: RunnerError
+        at reviveInvokeError (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:547:64)
+        at Object.invoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:620:11)
+        at async ModuleRunner.getModuleInformation (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1199:7)
+        at async request (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1216:83)
+        at async eval (C:\Users\HOSIYAT\Desktop\global-skill-navigator-main\src\start.js:4:1)
+        at async ESModulesEvaluator.runInlinedModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1006:3)
+        at async ModuleRunner.directRequest (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1259:59)
+        at async ModuleRunner.cachedRequest (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1166:73)
+        at async Promise.all (index 1)
+        at async loadEntries (C:\Users\HOSIYAT\Desktop\global-skill-navigator-main\node_modules\.pnpm\@tanstack+start-server-core@1.169.15\node_modules\@tanstack\start-server-core\src\createStartHandler.ts:115:53)
+  },
+  status: 500,
+  statusText: undefined,
+  headers: undefined,
+  data: undefined,
+  body: undefined,
+  unhandled: true
+}
+Error: h3 swallowed SSR error: {"status":500,"unhandled":true,"message":"HTTPError"}
+    at normalizeCatastrophicSsrResponse (virtual:tanstack-start-server-entry:29:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.fetch (virtual:tanstack-start-server-entry:41:14)
+    at async file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/@tanstack+start-plugin-core_5983a010ec7832120472370a2d271e42/node_modules/@tanstack/start-plugin-core/dist/esm/vite/dev-server-plugin/plugin.js:79:36
+Error: Cannot find module '@/integrations/supabase/auth-attacher' imported from 'C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/src/start.js'
+    at fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:33103:32)
+    ... 8 lines matching cause stack trace ...
+    at ModuleRunner.getModuleInformation (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1199:28) {
+  cause: Error: Cannot find module '@/integrations/supabase/auth-attacher' imported from 'C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/src/start.js'
+      at fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:33103:32)
+      at RunnableDevEnvironment.fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:34288:10)
+      at fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:34238:17)
+      at handleInvoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:25828:27)
+      at EventEmitter.listenerForInvokeHandler (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:25883:19)
+      at EventEmitter.emit (node:events:509:28)
+      at Object.send (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:11188:37)
+      at Object.invoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:606:31)
+      at Object.invoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:655:31)
+      at ModuleRunner.getModuleInformation (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1199:28) {
+    code: 'ERR_MODULE_NOT_FOUND',
+    runnerError: Error: RunnerError
+        at reviveInvokeError (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:547:64)
+        at Object.invoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:620:11)
+        at async ModuleRunner.getModuleInformation (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1199:7)
+        at async request (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1216:83)
+        at async eval (C:\Users\HOSIYAT\Desktop\global-skill-navigator-main\src\start.js:4:1)
+        at async ESModulesEvaluator.runInlinedModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1006:3)
+        at async ModuleRunner.directRequest (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1259:59)
+        at async ModuleRunner.cachedRequest (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1166:73)
+        at async Promise.all (index 1)
+        at async loadEntries (C:\Users\HOSIYAT\Desktop\global-skill-navigator-main\node_modules\.pnpm\@tanstack+start-server-core@1.169.15\node_modules\@tanstack\start-server-core\src\createStartHandler.ts:115:53)
+  },
+  status: 500,
+  statusText: undefined,
+  headers: undefined,
+  data: undefined,
+  body: undefined,
+  unhandled: true
+}
+Error: h3 swallowed SSR error: {"status":500,"unhandled":true,"message":"HTTPError"}
+    at normalizeCatastrophicSsrResponse (virtual:tanstack-start-server-entry:29:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.fetch (virtual:tanstack-start-server-entry:41:14)
+    at async file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/@tanstack+start-plugin-core_5983a010ec7832120472370a2d271e42/node_modules/@tanstack/start-plugin-core/dist/esm/vite/dev-server-plugin/plugin.js:79:36
+Error: Cannot find module '@/integrations/supabase/auth-attacher' imported from 'C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/src/start.js'
+    at fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:33103:32)
+    ... 8 lines matching cause stack trace ...
+    at ModuleRunner.getModuleInformation (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1199:28) {
+  cause: Error: Cannot find module '@/integrations/supabase/auth-attacher' imported from 'C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/src/start.js'
+      at fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:33103:32)
+      at RunnableDevEnvironment.fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:34288:10)
+      at fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:34238:17)
+      at handleInvoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:25828:27)
+      at EventEmitter.listenerForInvokeHandler (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:25883:19)
+      at EventEmitter.emit (node:events:509:28)
+      at Object.send (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:11188:37)
+      at Object.invoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:606:31)
+      at Object.invoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:655:31)
+      at ModuleRunner.getModuleInformation (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1199:28) {
+    code: 'ERR_MODULE_NOT_FOUND',
+    runnerError: Error: RunnerError
+        at reviveInvokeError (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:547:64)
+        at Object.invoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:620:11)
+        at async ModuleRunner.getModuleInformation (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1199:7)
+        at async request (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1216:83)
+        at async eval (C:\Users\HOSIYAT\Desktop\global-skill-navigator-main\src\start.js:4:1)
+        at async ESModulesEvaluator.runInlinedModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1006:3)
+        at async ModuleRunner.directRequest (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1259:59)
+        at async ModuleRunner.cachedRequest (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1166:73)
+        at async Promise.all (index 1)
+        at async loadEntries (C:\Users\HOSIYAT\Desktop\global-skill-navigator-main\node_modules\.pnpm\@tanstack+start-server-core@1.169.15\node_modules\@tanstack\start-server-core\src\createStartHandler.ts:115:53)
+  },
+  status: 500,
+  statusText: undefined,
+  headers: undefined,
+  data: undefined,
+  body: undefined,
+  unhandled: true
+}
+Error: h3 swallowed SSR error: {"status":500,"unhandled":true,"message":"HTTPError"}
+    at normalizeCatastrophicSsrResponse (virtual:tanstack-start-server-entry:29:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.fetch (virtual:tanstack-start-server-entry:41:14)
+    at async file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/@tanstack+start-plugin-core_5983a010ec7832120472370a2d271e42/node_modules/@tanstack/start-plugin-core/dist/esm/vite/dev-server-plugin/plugin.js:79:36
+Error: Cannot find module '@/integrations/supabase/auth-attacher' imported from 'C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/src/start.js'
+    at fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:33103:32)
+    ... 8 lines matching cause stack trace ...
+    at ModuleRunner.getModuleInformation (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1199:28) {
+  cause: Error: Cannot find module '@/integrations/supabase/auth-attacher' imported from 'C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/src/start.js'
+      at fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:33103:32)
+      at RunnableDevEnvironment.fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:34288:10)
+      at fetchModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:34238:17)
+      at handleInvoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:25828:27)
+      at EventEmitter.listenerForInvokeHandler (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:25883:19)
+      at EventEmitter.emit (node:events:509:28)
+      at Object.send (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/chunks/node.js:11188:37)
+      at Object.invoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:606:31)
+      at Object.invoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:655:31)
+      at ModuleRunner.getModuleInformation (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1199:28) {
+    code: 'ERR_MODULE_NOT_FOUND',
+    runnerError: Error: RunnerError
+        at reviveInvokeError (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:547:64)
+        at Object.invoke (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:620:11)
+        at async ModuleRunner.getModuleInformation (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1199:7)
+        at async request (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1216:83)
+        at async eval (C:\Users\HOSIYAT\Desktop\global-skill-navigator-main\src\start.js:4:1)
+        at async ESModulesEvaluator.runInlinedModule (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1006:3)
+        at async ModuleRunner.directRequest (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1259:59)
+        at async ModuleRunner.cachedRequest (file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/vite@8.1.2_@types+node@22.20.0_jiti@2.7.0/node_modules/vite/dist/node/module-runner.js:1166:73)
+        at async Promise.all (index 1)
+        at async loadEntries (C:\Users\HOSIYAT\Desktop\global-skill-navigator-main\node_modules\.pnpm\@tanstack+start-server-core@1.169.15\node_modules\@tanstack\start-server-core\src\createStartHandler.ts:115:53)
+  },
+  status: 500,
+  statusText: undefined,
+  headers: undefined,
+  data: undefined,
+  body: undefined,
+  unhandled: true
+}
+Error: h3 swallowed SSR error: {"status":500,"unhandled":true,"message":"HTTPError"}
+    at normalizeCatastrophicSsrResponse (virtual:tanstack-start-server-entry:29:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Object.fetch (virtual:tanstack-start-server-entry:41:14)
+    at async file:///C:/Users/HOSIYAT/Desktop/global-skill-navigator-main/node_modules/.pnpm/@tanstack+start-plugin-core_5983a010ec7832120472370a2d271e42/node_modules/@tanstack/start-plugin-core/dist/esm/vite/dev-server-plugin/plugin.js:79:36
+[ELIFECYCLE] Command failed with exit code 3221225786.
